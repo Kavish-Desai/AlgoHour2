@@ -11,7 +11,7 @@ public class Solution{
       System.out.println(isPrime(num1));
     }
     public static boolean isPrime(int number) {
-    if (number <= 1 || number % 2 == 0) {
+    if (number <= 1 || (number > 2 && number % 2 == 0)) {
         return false;
     }
     for (int i = 2; i <= Math.sqrt(number); i++) {
